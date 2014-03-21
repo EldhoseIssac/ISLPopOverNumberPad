@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7044D3D18DC18DC00AF75F3 /* deleteLast.png in Resources */ = {isa = PBXBuildFile; fileRef = E7044D3C18DC18DC00AF75F3 /* deleteLast.png */; };
+		E72708ED18DBFE6200AF6131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72708EC18DBFE6200AF6131 /* Foundation.framework */; };
+		E72708EF18DBFE6200AF6131 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72708EE18DBFE6200AF6131 /* CoreGraphics.framework */; };
+		E72708F118DBFE6200AF6131 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72708F018DBFE6200AF6131 /* UIKit.framework */; };
+		E72708F718DBFE6200AF6131 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E72708F518DBFE6200AF6131 /* InfoPlist.strings */; };
+		E72708F918DBFE6200AF6131 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E72708F818DBFE6200AF6131 /* main.m */; };
+		E72708FD18DBFE6200AF6131 /* ISLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E72708FC18DBFE6200AF6131 /* ISLAppDelegate.m */; };
+		E727090018DBFE6200AF6131 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72708FE18DBFE6200AF6131 /* Main_iPhone.storyboard */; };
+		E727090318DBFE6200AF6131 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E727090118DBFE6200AF6131 /* Main_iPad.storyboard */; };
+		E727090618DBFE6200AF6131 /* ISLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E727090518DBFE6200AF6131 /* ISLViewController.m */; };
+		E727090818DBFE6200AF6131 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E727090718DBFE6200AF6131 /* Images.xcassets */; };
+		E727090F18DBFE6200AF6131 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E727090E18DBFE6200AF6131 /* XCTest.framework */; };
+		E727091018DBFE6200AF6131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72708EC18DBFE6200AF6131 /* Foundation.framework */; };
+		E727091118DBFE6200AF6131 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72708F018DBFE6200AF6131 /* UIKit.framework */; };
+		E727091918DBFE6200AF6131 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E727091718DBFE6200AF6131 /* InfoPlist.strings */; };
+		E727091B18DBFE6200AF6131 /* ISLPopOverNumberPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E727091A18DBFE6200AF6131 /* ISLPopOverNumberPadTests.m */; };
+		E727092618DC015A00AF6131 /* ISLNumberPadField.m in Sources */ = {isa = PBXBuildFile; fileRef = E727092518DC015A00AF6131 /* ISLNumberPadField.m */; };
+		E727092918DC04B300AF6131 /* numBg.png in Resources */ = {isa = PBXBuildFile; fileRef = E727092818DC04B300AF6131 /* numBg.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E727091218DBFE6200AF6131 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E72708E118DBFE6200AF6131 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E72708E818DBFE6200AF6131;
+			remoteInfo = ISLPopOverNumberPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E7044D3C18DC18DC00AF75F3 /* deleteLast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deleteLast.png; sourceTree = "<group>"; };
+		E72708E918DBFE6200AF6131 /* ISLPopOverNumberPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISLPopOverNumberPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E72708EC18DBFE6200AF6131 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E72708EE18DBFE6200AF6131 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E72708F018DBFE6200AF6131 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E72708F418DBFE6200AF6131 /* ISLPopOverNumberPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ISLPopOverNumberPad-Info.plist"; sourceTree = "<group>"; };
+		E72708F618DBFE6200AF6131 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E72708F818DBFE6200AF6131 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E72708FA18DBFE6200AF6131 /* ISLPopOverNumberPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ISLPopOverNumberPad-Prefix.pch"; sourceTree = "<group>"; };
+		E72708FB18DBFE6200AF6131 /* ISLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISLAppDelegate.h; sourceTree = "<group>"; };
+		E72708FC18DBFE6200AF6131 /* ISLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISLAppDelegate.m; sourceTree = "<group>"; };
+		E72708FF18DBFE6200AF6131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		E727090218DBFE6200AF6131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		E727090418DBFE6200AF6131 /* ISLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISLViewController.h; sourceTree = "<group>"; };
+		E727090518DBFE6200AF6131 /* ISLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISLViewController.m; sourceTree = "<group>"; };
+		E727090718DBFE6200AF6131 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E727090D18DBFE6200AF6131 /* ISLPopOverNumberPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISLPopOverNumberPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E727090E18DBFE6200AF6131 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E727091618DBFE6200AF6131 /* ISLPopOverNumberPadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ISLPopOverNumberPadTests-Info.plist"; sourceTree = "<group>"; };
+		E727091818DBFE6200AF6131 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E727091A18DBFE6200AF6131 /* ISLPopOverNumberPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISLPopOverNumberPadTests.m; sourceTree = "<group>"; };
+		E727092418DC015A00AF6131 /* ISLNumberPadField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISLNumberPadField.h; path = ISLNumberPadField/ISLNumberPadField.h; sourceTree = "<group>"; };
+		E727092518DC015A00AF6131 /* ISLNumberPadField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISLNumberPadField.m; path = ISLNumberPadField/ISLNumberPadField.m; sourceTree = "<group>"; };
+		E727092818DC04B300AF6131 /* numBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numBg.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E72708E618DBFE6200AF6131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E72708EF18DBFE6200AF6131 /* CoreGraphics.framework in Frameworks */,
+				E72708F118DBFE6200AF6131 /* UIKit.framework in Frameworks */,
+				E72708ED18DBFE6200AF6131 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E727090A18DBFE6200AF6131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E727090F18DBFE6200AF6131 /* XCTest.framework in Frameworks */,
+				E727091118DBFE6200AF6131 /* UIKit.framework in Frameworks */,
+				E727091018DBFE6200AF6131 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E72708E018DBFE6200AF6131 = {
+			isa = PBXGroup;
+			children = (
+				E72708F218DBFE6200AF6131 /* ISLPopOverNumberPad */,
+				E727091418DBFE6200AF6131 /* ISLPopOverNumberPadTests */,
+				E72708EB18DBFE6200AF6131 /* Frameworks */,
+				E72708EA18DBFE6200AF6131 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E72708EA18DBFE6200AF6131 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E72708E918DBFE6200AF6131 /* ISLPopOverNumberPad.app */,
+				E727090D18DBFE6200AF6131 /* ISLPopOverNumberPadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E72708EB18DBFE6200AF6131 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E72708EC18DBFE6200AF6131 /* Foundation.framework */,
+				E72708EE18DBFE6200AF6131 /* CoreGraphics.framework */,
+				E72708F018DBFE6200AF6131 /* UIKit.framework */,
+				E727090E18DBFE6200AF6131 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E72708F218DBFE6200AF6131 /* ISLPopOverNumberPad */ = {
+			isa = PBXGroup;
+			children = (
+				E727092718DC016400AF6131 /* NumberPad */,
+				E72708FB18DBFE6200AF6131 /* ISLAppDelegate.h */,
+				E72708FC18DBFE6200AF6131 /* ISLAppDelegate.m */,
+				E72708FE18DBFE6200AF6131 /* Main_iPhone.storyboard */,
+				E727090118DBFE6200AF6131 /* Main_iPad.storyboard */,
+				E727090418DBFE6200AF6131 /* ISLViewController.h */,
+				E727090518DBFE6200AF6131 /* ISLViewController.m */,
+				E727090718DBFE6200AF6131 /* Images.xcassets */,
+				E72708F318DBFE6200AF6131 /* Supporting Files */,
+			);
+			path = ISLPopOverNumberPad;
+			sourceTree = "<group>";
+		};
+		E72708F318DBFE6200AF6131 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E72708F418DBFE6200AF6131 /* ISLPopOverNumberPad-Info.plist */,
+				E72708F518DBFE6200AF6131 /* InfoPlist.strings */,
+				E72708F818DBFE6200AF6131 /* main.m */,
+				E72708FA18DBFE6200AF6131 /* ISLPopOverNumberPad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E727091418DBFE6200AF6131 /* ISLPopOverNumberPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				E727091A18DBFE6200AF6131 /* ISLPopOverNumberPadTests.m */,
+				E727091518DBFE6200AF6131 /* Supporting Files */,
+			);
+			path = ISLPopOverNumberPadTests;
+			sourceTree = "<group>";
+		};
+		E727091518DBFE6200AF6131 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E727091618DBFE6200AF6131 /* ISLPopOverNumberPadTests-Info.plist */,
+				E727091718DBFE6200AF6131 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E727092718DC016400AF6131 /* NumberPad */ = {
+			isa = PBXGroup;
+			children = (
+				E7044D3C18DC18DC00AF75F3 /* deleteLast.png */,
+				E727092818DC04B300AF6131 /* numBg.png */,
+				E727092418DC015A00AF6131 /* ISLNumberPadField.h */,
+				E727092518DC015A00AF6131 /* ISLNumberPadField.m */,
+			);
+			name = NumberPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E72708E818DBFE6200AF6131 /* ISLPopOverNumberPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E727091E18DBFE6200AF6131 /* Build configuration list for PBXNativeTarget "ISLPopOverNumberPad" */;
+			buildPhases = (
+				E72708E518DBFE6200AF6131 /* Sources */,
+				E72708E618DBFE6200AF6131 /* Frameworks */,
+				E72708E718DBFE6200AF6131 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ISLPopOverNumberPad;
+			productName = ISLPopOverNumberPad;
+			productReference = E72708E918DBFE6200AF6131 /* ISLPopOverNumberPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E727090C18DBFE6200AF6131 /* ISLPopOverNumberPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E727092118DBFE6200AF6131 /* Build configuration list for PBXNativeTarget "ISLPopOverNumberPadTests" */;
+			buildPhases = (
+				E727090918DBFE6200AF6131 /* Sources */,
+				E727090A18DBFE6200AF6131 /* Frameworks */,
+				E727090B18DBFE6200AF6131 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E727091318DBFE6200AF6131 /* PBXTargetDependency */,
+			);
+			name = ISLPopOverNumberPadTests;
+			productName = ISLPopOverNumberPadTests;
+			productReference = E727090D18DBFE6200AF6131 /* ISLPopOverNumberPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E72708E118DBFE6200AF6131 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ISL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Islet Systems";
+				TargetAttributes = {
+					E727090C18DBFE6200AF6131 = {
+						TestTargetID = E72708E818DBFE6200AF6131;
+					};
+				};
+			};
+			buildConfigurationList = E72708E418DBFE6200AF6131 /* Build configuration list for PBXProject "ISLPopOverNumberPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E72708E018DBFE6200AF6131;
+			productRefGroup = E72708EA18DBFE6200AF6131 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E72708E818DBFE6200AF6131 /* ISLPopOverNumberPad */,
+				E727090C18DBFE6200AF6131 /* ISLPopOverNumberPadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E72708E718DBFE6200AF6131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7044D3D18DC18DC00AF75F3 /* deleteLast.png in Resources */,
+				E727090318DBFE6200AF6131 /* Main_iPad.storyboard in Resources */,
+				E727090818DBFE6200AF6131 /* Images.xcassets in Resources */,
+				E727090018DBFE6200AF6131 /* Main_iPhone.storyboard in Resources */,
+				E72708F718DBFE6200AF6131 /* InfoPlist.strings in Resources */,
+				E727092918DC04B300AF6131 /* numBg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E727090B18DBFE6200AF6131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E727091918DBFE6200AF6131 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E72708E518DBFE6200AF6131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E727092618DC015A00AF6131 /* ISLNumberPadField.m in Sources */,
+				E727090618DBFE6200AF6131 /* ISLViewController.m in Sources */,
+				E72708F918DBFE6200AF6131 /* main.m in Sources */,
+				E72708FD18DBFE6200AF6131 /* ISLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E727090918DBFE6200AF6131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E727091B18DBFE6200AF6131 /* ISLPopOverNumberPadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E727091318DBFE6200AF6131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E72708E818DBFE6200AF6131 /* ISLPopOverNumberPad */;
+			targetProxy = E727091218DBFE6200AF6131 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E72708F518DBFE6200AF6131 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E72708F618DBFE6200AF6131 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E72708FE18DBFE6200AF6131 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E72708FF18DBFE6200AF6131 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E727090118DBFE6200AF6131 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E727090218DBFE6200AF6131 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E727091718DBFE6200AF6131 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E727091818DBFE6200AF6131 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E727091C18DBFE6200AF6131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E727091D18DBFE6200AF6131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E727091F18DBFE6200AF6131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ISLPopOverNumberPad/ISLPopOverNumberPad-Prefix.pch";
+				INFOPLIST_FILE = "ISLPopOverNumberPad/ISLPopOverNumberPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E727092018DBFE6200AF6131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ISLPopOverNumberPad/ISLPopOverNumberPad-Prefix.pch";
+				INFOPLIST_FILE = "ISLPopOverNumberPad/ISLPopOverNumberPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E727092218DBFE6200AF6131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ISLPopOverNumberPad.app/ISLPopOverNumberPad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ISLPopOverNumberPad/ISLPopOverNumberPad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ISLPopOverNumberPadTests/ISLPopOverNumberPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E727092318DBFE6200AF6131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ISLPopOverNumberPad.app/ISLPopOverNumberPad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ISLPopOverNumberPad/ISLPopOverNumberPad-Prefix.pch";
+				INFOPLIST_FILE = "ISLPopOverNumberPadTests/ISLPopOverNumberPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E72708E418DBFE6200AF6131 /* Build configuration list for PBXProject "ISLPopOverNumberPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E727091C18DBFE6200AF6131 /* Debug */,
+				E727091D18DBFE6200AF6131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E727091E18DBFE6200AF6131 /* Build configuration list for PBXNativeTarget "ISLPopOverNumberPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E727091F18DBFE6200AF6131 /* Debug */,
+				E727092018DBFE6200AF6131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E727092118DBFE6200AF6131 /* Build configuration list for PBXNativeTarget "ISLPopOverNumberPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E727092218DBFE6200AF6131 /* Debug */,
+				E727092318DBFE6200AF6131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E72708E118DBFE6200AF6131 /* Project object */;
+}
