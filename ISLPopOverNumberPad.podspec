@@ -17,18 +17,13 @@ Pod::Spec.new do |s|
 
   s.name         = "ISLPopOverNumberPad"
   s.version      = "0.0.1"
-  s.summary      = "A short description of ISLPopOverNumberPad."
+  s.summary      = "UIButton class with popover number pad input"
 
   s.description  = <<-DESC
-                   A longer description of ISLPopOverNumberPad in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
+                  Number pad just bellow the input view as popover
                    DESC
 
-  s.homepage     = "http://EXAMPLE/ISLPopOverNumberPad"
+  s.homepage     = "https://github.com/EldhoseIssac/ISLPopOverNumberPad"
   # s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
 
 
@@ -39,7 +34,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = 'MIT (example)'
+  s.license      = 'MIT'
   # s.license      = { :type => 'MIT', :file => 'FILE_LICENSE' }
 
 
@@ -62,7 +57,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, '5.0'
+  s.platform     = :ios, '7.0'
 
   #  When using multiple platforms
   # s.ios.deployment_target = '5.0'
@@ -75,7 +70,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/ISLPopOverNumberPad.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/EldhoseIssac/ISLPopOverNumberPad.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -125,7 +120,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   # s.dependency 'JSONKit', '~> 1.4'
