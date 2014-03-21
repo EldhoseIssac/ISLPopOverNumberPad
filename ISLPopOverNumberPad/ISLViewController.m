@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
     pos = NumberPadAtButtom;
-    [self.numberInput setNumberPadSize:CGSizeMake(200, 260) forTheSuperView:self.view andAppearIn:NumberPadAtButtom];
+    [self.numberInput setNumberPadSize:CGSizeMake(366, 475) forTheSuperView:self.view andAppearIn:NumberPadAtButtom];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
