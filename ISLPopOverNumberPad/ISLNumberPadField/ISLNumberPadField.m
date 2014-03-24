@@ -34,13 +34,23 @@
     }
     return self;
 }
+- (instancetype)initWithFrame:(CGRect)frame forTheSuperView:(UIView *)superView withScale:(CGFloat)scaleValue andAppearIn:(NumberPadAt)direction{
+    CGSize asize = CGSizeMake(ISLNumberUnitWidth*scaleValue, IslNumberUnitHeight*scaleValue);
+    return [self initWithFrame:frame forTheSuperView:superView withSize:asize andAppearIn:direction];
+}
 - (void)setNumberPadSize:(CGSize)size forTheSuperView:(UIView *)superView andAppearIn:(NumberPadAt) direction{
     theSuperView = superView;
     apperAt = direction;
     numberPadSize = size;
-    [self addTarget:self
-                           action:@selector(showNumberPad)
-                 forControlEvents:UIControlEventTouchDown];
+    
+    
+
+    self.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *singleFingerTap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(showNumberPad)];
+    [self addGestureRecognizer:singleFingerTap];
     
 }
 -(void)hideNumberPad{
@@ -108,7 +118,7 @@
             if (!numberPadWillShowHandle) {
                 abtn.tag = i+j+1+i*2;
                 [abtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-                [abtn.titleLabel setFont:self.titleLabel.font];
+                [abtn.titleLabel setFont:self.font];
                 if (abtn.tag == 10) {
                     [abtn setTitle:@"." forState:UIControlStateNormal];
                     [abtn setBackgroundImage:[UIImage imageNamed:@"numBg"] forState:UIControlStateNormal];
@@ -145,12 +155,7 @@
     [theSuperView addSubview:_numberPadView];
     
 }
-- (void)setText:(NSString *)text{
-    [self setTitle:text forState:UIControlStateNormal];
-}
-- (NSString *)text{
-    return self.titleLabel.text;
-}
+
 
 - (void)setNumberPadWillShow:(NumberPadWillShow) ahandle{
     numberPadWillShowHandle = ahandle;
@@ -203,13 +208,13 @@
             default:
                 break;
         }
-        if ([inputTo rangeOfString:@"."].location !=NSNotFound) {
-            if ([([inputTo componentsSeparatedByString:@"."][1]) length]>2) {
-                NSString *newString = [inputTo substringToIndex:[inputTo length]-1];
-                inputTo = newString;
-            }
-        }
-        [self setTitle:inputTo forState:UIControlStateNormal];
+//        if ([inputTo rangeOfString:@"."].location !=NSNotFound) {
+//            if ([([inputTo componentsSeparatedByString:@"."][1]) length]>2) {
+//                NSString *newString = [inputTo substringToIndex:[inputTo length]-1];
+//                inputTo = newString;
+//            }
+//        }
+        self.text = inputTo;
         if (btnTextChangehandle) {
             btnTextChangehandle(inputTo);
         }

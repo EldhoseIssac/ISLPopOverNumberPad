@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #define ISLNumberPadGap 2.0
+#define ISLNumberUnitWidth 362.0
+#define IslNumberUnitHeight 466.0
 typedef NS_ENUM(NSUInteger,NumberPadAt) {
     NumberPadAtButtom=0,
     NumberPadAtTop,
@@ -18,7 +20,7 @@ typedef void (^NumberPadWillShow)(UIView * numberPadView,NSArray * btns);
 typedef void (^NumberPadAButtonTouched)(UIButton *touchedButton);
 typedef void (^TextChanged)(NSString * newText);
 typedef void (^TextDoneEditing)();
-@interface ISLNumberPadField : UIButton{
+@interface ISLNumberPadField : UILabel{
     NumberPadWillShow numberPadWillShowHandle;
     NumberPadAButtonTouched numberpadButtonTouchhandle;
     TextChanged btnTextChangehandle;
@@ -34,7 +36,6 @@ typedef void (^TextDoneEditing)();
 - (void)setTextDoneEditing:(TextDoneEditing)ahandle;
 
 - (instancetype)initWithFrame:(CGRect)frame forTheSuperView:(UIView *)superView withSize:(CGSize)size andAppearIn:(NumberPadAt) direction;
+- (instancetype)initWithFrame:(CGRect)frame forTheSuperView:(UIView *)superView withScale:(CGFloat)scaleValue andAppearIn:(NumberPadAt)direction;
 - (void)setNumberPadSize:(CGSize)size forTheSuperView:(UIView *)superView andAppearIn:(NumberPadAt) direction;
-- (void)setText:(NSString *)text;
-- (NSString *)text;
 @end
