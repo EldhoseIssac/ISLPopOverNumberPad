@@ -38,6 +38,10 @@
     CGSize asize = CGSizeMake(ISLNumberUnitWidth*scaleValue, IslNumberUnitHeight*scaleValue);
     return [self initWithFrame:frame forTheSuperView:superView withSize:asize andAppearIn:direction];
 }
+- (void)setNumberPadScale:(CGFloat)scaleValue  forTheSuperView:(UIView *)superView andAppearIn:(NumberPadAt) direction{
+    CGSize asize = CGSizeMake(ISLNumberUnitWidth*scaleValue, IslNumberUnitHeight*scaleValue);
+    [self setNumberPadSize:asize forTheSuperView:superView andAppearIn:direction];
+}
 - (void)setNumberPadSize:(CGSize)size forTheSuperView:(UIView *)superView andAppearIn:(NumberPadAt) direction{
     theSuperView = superView;
     apperAt = direction;
@@ -115,7 +119,8 @@
                              forControlEvents:UIControlEventTouchDown];
             [numBtnArry addObject:abtn];
             
-            if (!numberPadWillShowHandle) {
+            //  if (!numberPadWillShowHandle)
+            {
                 abtn.tag = i+j+1+i*2;
                 [abtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
                 [abtn.titleLabel setFont:self.font];

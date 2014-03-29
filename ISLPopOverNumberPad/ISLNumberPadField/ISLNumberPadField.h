@@ -38,4 +38,5 @@ typedef void (^TextDoneEditing)();
 - (instancetype)initWithFrame:(CGRect)frame forTheSuperView:(UIView *)superView withSize:(CGSize)size andAppearIn:(NumberPadAt) direction;
 - (instancetype)initWithFrame:(CGRect)frame forTheSuperView:(UIView *)superView withScale:(CGFloat)scaleValue andAppearIn:(NumberPadAt)direction;
 - (void)setNumberPadSize:(CGSize)size forTheSuperView:(UIView *)superView andAppearIn:(NumberPadAt) direction;
+- (void)setNumberPadScale:(CGFloat)scaleValue  forTheSuperView:(UIView *)superView andAppearIn:(NumberPadAt) direction;
 @end
